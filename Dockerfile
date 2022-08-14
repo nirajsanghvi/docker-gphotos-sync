@@ -17,7 +17,7 @@ RUN go get github.com/nirajsanghvi/gphotos-cdp@latest
 
 
 FROM crazymax/alpine-s6:3.14-edge
-LABEL maintainer="Jake Wharton <docker@jakewharton.com>"
+LABEL maintainer="Niraj Sanghvi <docker@niraj.com>"
 
 ENV \
     # Fail if cont-init scripts exit with non-zero code.

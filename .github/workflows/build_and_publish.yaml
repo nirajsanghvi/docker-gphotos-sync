@@ -45,6 +45,6 @@ jobs:
         with:
           build-args: --progress plain
           push: true
-          tags: ${{ steps.docker_meta.outputs.tags }}
+          tags: ${{ steps.docker_meta.outputs.tags }}, nirajsanghvi/gphotos-sync:latest
           labels: ${{ steps.docker_meta.outputs.labels }}
           platforms: linux/amd64,linux/arm64

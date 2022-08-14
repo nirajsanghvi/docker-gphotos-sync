@@ -13,9 +13,9 @@ ERROR: '/download' directory must be mounted
 "
 	exit 1
 fi
-if [ ! -d /config ]; then
+if [ ! -d /tmp/gphotos-cdp ]; then
 	echo "
-ERROR: '/config' directory must be mounted
+ERROR: '/tmp/gphotos-cdp' directory must be mounted
 "
 	exit 1
 fi

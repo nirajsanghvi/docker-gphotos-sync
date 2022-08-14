@@ -20,8 +20,6 @@ jobs:
             ghcr.io/nirajsanghvi/gphotos-sync
           tag-semver: |
             {{version}}
-            {{major}}
-            {{major}}.{{minor}}
 
       - uses: docker/login-action@v1.10.0
         with:

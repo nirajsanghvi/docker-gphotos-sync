@@ -23,11 +23,8 @@
 PUID=${PUID:-1001}
 PGID=${PGID:-1001}
 
-# groupmod -o -g "$PGID" abc
-# usermod -o -u "$PUID" abc
-
-addgroup -g $PGID abc
-adduser -D -H -u $PUID abc abc
+addgroup -g $PGID -S abc
+adduser -D -H -G abc -S -u $PUID abc
 
 echo "
 Initializing container

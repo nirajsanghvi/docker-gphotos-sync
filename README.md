@@ -4,11 +4,13 @@ Docker GPhotos Sync
 A Docker container which runs the [`gphoto-cdp`][1] tool automatically to synchronize your Google Photos (in original quality!).
 
  [1]: http://github.com/perkeep/gphotos-cdp
+ 
+_Note: This forked version of the [JakeWharton/docker-gphotos-sync](https://github.com/JakeWharton/docker-gphotos-sync) Docker container relies on an updated fork of the [`gphoto-cdp`][1] tool found at [nirajsanghvi/gphotos-cdp](https://github.com/nirajsanghvi/gphotos-cdp), which uses both the latest version of gphoto-cdp which added some resiliency for the `.lastdone` file, as well as adding a new `-skipexisting` flag to the tool to prevent redownloading previously downloaded images (useful for older photos getting added to your photo library, or if something goes wrong with the `.lastdone` file). The script runs with this flag on by default._
 
 [![Docker Image Version](https://img.shields.io/docker/v/nirajsanghvi/gphotos-sync?sort=semver)][hub]
 [![Docker Image Size](https://img.shields.io/docker/image-size/nirajsanghvi/gphotos-sync)][hub]
 
- [hub]: https://hub.docker.com/r/jakewharton/gphotos-sync/
+ [hub]: https://hub.docker.com/r/nirajsanghvi/gphotos-sync/
 
 
 Motivation
@@ -174,7 +176,7 @@ LICENSE
 
 MIT. See `LICENSE.txt`.
 
-    Copyright 2020 Jake Wharton
+>Copyright for portions of project [nirajsanghvi/docker-gphotos-sync](https://github.com/nirajsanghvi/docker-gphotos-sync) are held by [Jake Wharton, 2020] as part of project https://github.com/JakeWharton/docker-gphotos-sync. All other copyright for project [nirajsanghvi/docker-gphotos-sync](https://github.com/nirajsanghvi/docker-gphotos-sync) are held by [Niraj Sanghvi, 2022].
 
 The Chrome installation in the `Dockerfile` is from [Zenika/alpine-chrome][3].
 `jhead` installation from [sourcelevel/engine-image-optim][4]

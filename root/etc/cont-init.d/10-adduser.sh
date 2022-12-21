@@ -23,8 +23,8 @@
 PUID=${PUID:-1001}
 PGID=${PGID:-1001}
 
-addgroup -g $PGID -S abc
-adduser -D -H -G abc -S -u $PUID abc
+addgroup -g "${PUID}" -S abc
+adduser -u "${PUID}" -S abc -G abc
 
 echo "
 Initializing container

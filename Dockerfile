@@ -22,6 +22,7 @@ LABEL maintainer="Niraj Sanghvi <docker@niraj.com>"
 ENV \
     # Fail if cont-init scripts exit with non-zero code.
     S6_BEHAVIOUR_IF_STAGE2_FAILS=2 \
+    S6_CMD_WAIT_FOR_SERVICES_MAXTIME=30000 \
     CRON="" \
     HEALTHCHECK_ID="" \
     HEALTHCHECK_HOST="https://hc-ping.com" \

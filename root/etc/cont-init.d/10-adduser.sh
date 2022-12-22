@@ -23,7 +23,7 @@
 PUID=${PUID:-1001}
 PGID=${PGID:-1001}
 
-addgroup -g "${PUID}" -S abc
+addgroup -g "${PGID}" -S abc
 adduser -u "${PUID}" -S abc -G abc
 
 echo "

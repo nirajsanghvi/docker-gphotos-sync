@@ -13,7 +13,7 @@ RUN wget http://www.sentex.net/~mwandel/jhead/jhead-$JHEAD_VERSION.tar.gz \
     && make install
 
 ENV GO111MODULE=on
-RUN go install github.com/nirajsanghvi/gphotos-cdp@v1.1.0
+RUN go install github.com/nirajsanghvi/gphotos-cdp@v1.2.0
 
 
 FROM crazymax/alpine-s6:3.14-edge
